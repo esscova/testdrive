@@ -1,0 +1,82 @@
+[
+  {
+    "titulo": "Stranger Things",
+    "anoLancamento": 2016,
+    "temporadas": 4,
+    "finalizada": false,
+    "generos": ["Ficção Científica", "Terror", "Suspense", "Drama", "Mistério"],
+    "criadores": ["The Duffer Brothers"],
+    "sinopse": "Em uma pequena cidade, um grupo de amigos presencia eventos sobrenaturais após o desaparecimento misterioso de um garoto.",
+    "plataforma": "Netflix",
+    "avaliacaoIMDB": 8.7
+  },
+  {
+    "titulo": "The Witcher",
+    "anoLancamento": 2019,
+    "temporadas": 3,
+    "finalizada": false,
+    "generos": ["Fantasia", "Ação", "Aventura", "Drama"],
+    "criadores": ["Lauren Schmidt Hissrich"],
+    "plataforma": "Netflix",
+    "avaliacaoIMDB": 8.1
+  },
+  {
+    "titulo": "Breaking Bad",
+    "anoLancamento": 2008,
+    "temporadas": 5,
+    "finalizada": true,
+    "generos": ["Drama", "Suspense", "Crime"],
+    "criadores": ["Vince Gilligan"],
+    "sinopse": "Um professor de química do ensino médio diagnosticado com câncer começa a produzir e vender metanfetamina.",
+    "plataforma": "AMC",
+    "avaliacaoIMDB": 9.5
+  },
+  {
+    "titulo": "Fleabag",
+    "anoLancamento": 2016,
+    "temporadas": 2,
+    "finalizada": true,
+    "generos": ["Comédia", "Drama"],
+    "criadores": ["Phoebe Waller-Bridge"],
+    "plataforma": "BBC Three / Amazon Prime Video",
+    "avaliacaoIMDB": 8.7
+  },
+  {
+    "titulo": "Game of Thrones",
+    "anoLancamento": 2011,
+    "temporadas": 8,
+    "finalizada": true,
+    "generos": ["Fantasia", "Drama", "Aventura"],
+    "plataforma": "HBO",
+    "avaliacaoIMDB": 9.2
+  },
+  {
+    "titulo": "The Mandalorian",
+    "anoLancamento": 2019,
+    "temporadas": 3,
+    "finalizada": false,
+    "generos": ["Ficção Científica", "Ação", "Aventura", "Western Espacial"],
+    "plataforma": "Disney+",
+    "avaliacaoIMDB": 8.7
+  },
+  {
+    "titulo": "Severance",
+    "anoLancamento": 2022,
+    "temporadas": 1,
+    "finalizada": false,
+    "generos": ["Ficção Científica", "Drama", "Suspense", "Mistério"],
+    "criadores": ["Dan Erickson"],
+    "plataforma": "Apple TV+",
+    "avaliacaoIMDB": 8.7
+  },
+  {
+    "titulo": "Ted Lasso",
+    "anoLancamento": 2020,
+    "temporadas": 3,
+    "finalizada": false,  
+    "generos": ["Comédia", "Drama", "Esporte"],
+    "criadores": ["Jason Sudeikis", "Bill Lawrence", "Brendan Hunt", "Joe Kelly"],
+    "plataforma": "Apple TV+",
+    "avaliacaoIMDB": 8.8
+  }
+]
