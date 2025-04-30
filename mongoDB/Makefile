@@ -3,28 +3,36 @@
 # variaveis
 COMPOSE_FILE = docker-compose.yml
 MONGO_CONTAINER = mongodb
-MONGO_URI = mongodb://admin:admin123@localhost:27017/testdb
+MONGO_URI = mongodb://admin:admin123@localhost:27017/testdb?authSource=admin
 
-# iniciar o ambiente MongoDB
+# Iniciar o ambiente MongoDB
 up:
 	docker compose -f $(COMPOSE_FILE) up -d
 
-# parar o ambiente MongoDB
+# Parar o ambiente MongoDB
 down:
 	docker compose -f $(COMPOSE_FILE) down
 
-# parar o ambiente e remover volumes
+# Parar o ambiente e remover volumes
 down-v:
 	docker compose -f $(COMPOSE_FILE) down -v
 
-# acessar o shell do MongoDB
+# Acessar o shell do MongoDB
 mongo-shell:
+	@if ! docker ps -q -f name=$(MONGO_CONTAINER) | grep -q .; then \
+		echo "Erro: O container $(MONGO_CONTAINER) não está rodando. Execute 'make up' primeiro."; \
+		exit 1; \
+	fi
 	docker exec -it $(MONGO_CONTAINER) mongosh "$(MONGO_URI)"
 
-# importar um arquivo JSON específico ... exemplo: make import-json FILE=exemplo.json
+# Importar um arquivo JSON específico ... exemplo: make import-json FILE=exemplo.json
 import-json:
 	@if [ -z "$(FILE)" ]; then \
 		echo "Erro: Defina o arquivo JSON com FILE=<nome>. Ex: make import-json FILE=exemplo.json"; \
+		exit 1; \
+	fi
+	@if ! docker ps -q -f name=$(MONGO_CONTAINER) | grep -q .; then \
+		echo "Erro: O container $(MONGO_CONTAINER) não está rodando. Execute 'make up' primeiro."; \
 		exit 1; \
 	fi
 	docker exec $(MONGO_CONTAINER) mongoimport --uri "$(MONGO_URI)" --collection $(basename $(FILE) .json) --file /dados/$(FILE) --jsonArray
@@ -33,7 +41,7 @@ import-json:
 logs:
 	docker logs $(MONGO_CONTAINER)
 
-# exibir ajuda
+# Exibir ajuda
 help:
 	@echo "Comandos disponíveis:"
 	@echo "  make up           - Inicia o ambiente MongoDB"
