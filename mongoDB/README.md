@@ -82,7 +82,7 @@ O repositório é ideal para:
    - Abre o `mongosh` para executar comandos no banco `testdb`.
 
 6. **Pratique CRUD**:
-   - Consulte o arquivo [series_collection.md](./series_collection.md) para exercícios práticos de CRUD na coleção `series`.
+   - Consulte o arquivo [series_collection.md](./docs/series_collection.md) para exercícios práticos de CRUD na coleção `series`.
 
 7. **Visualize Logs** (se necessário):
    ```bash
@@ -106,7 +106,7 @@ O banco `testdb` é criado automaticamente pelo MongoDB, configurado via a vari�
 - Executar operações CRUD, consultas, e agregações.
 - Testar índices e outras funcionalidades do MongoDB.
 
-A coleção `series`, gerada a partir de `series.json`, é usada como base para os exercícios em [series_collection.md](./series_collection.md), mas você pode criar outras coleções importando diferentes arquivos JSON.
+A coleção `series`, gerada a partir de `series.json`, é usada como base para os exercícios em [series_collection.md](./docs/series_collection.md), mas você pode criar outras coleções importando diferentes arquivos JSON.
 
 ## Conexão com MongoDB Compass
 Para visualizar e manipular os dados graficamente, conecte-se ao MongoDB Compass usando:
@@ -124,7 +124,7 @@ mongodb://admin:admin123@localhost:27017/testdb?authSource=admin
 - `make help`: Lista todos os comandos disponíveis.
 
 ## Exercícios de Estudo
-Para praticar operações CRUD e explorar o MongoDB, consulte o arquivo [series_collection.md](./series_collection.md). Ele contém exercícios detalhados usando a coleção `series`, cobrindo:
+Para praticar operações CRUD e explorar o MongoDB, consulte o arquivo [series_collection.md](./docs/series_collection.md). Ele contém exercícios detalhados usando a coleção `series`, cobrindo:
 - Criação de documentos (`insertOne`, `insertMany`).
 - Consultas (`find`, filtros, projeções, ordenação).
 - Atualizações (`updateOne`, `updateMany`).
