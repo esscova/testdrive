@@ -5,3 +5,4 @@ Um espaço dedicado para explorar e experimentar diversas tecnologias em projeto
 ### Conteúdo
 **MongoDB**: Ambiente para prática com `Docker` para configuração do banco de dados e `Makefile` para automação de tarefas.
 
+**Airflow**: Ambiente virtual Python para pratica.
