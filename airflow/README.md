@@ -1,4 +1,4 @@
-## Introdução ao Apache Airflow**
+## Introdução ao Apache Airflow
 
 ### **O que é o Apache Airflow?**
 
