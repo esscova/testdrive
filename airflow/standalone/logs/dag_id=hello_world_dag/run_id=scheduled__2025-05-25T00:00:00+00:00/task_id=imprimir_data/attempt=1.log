@@ -1,0 +1,15 @@
+{"timestamp":"2025-05-25T00:23:32.721737","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T00:23:32.722088","level":"info","event":"Filling up the DagBag from /home/escova/workspace/testdrive/airflow/standalone/dags/hello_world_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T00:23:32.729528","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:32.729773","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'date']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:32.758091Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758185Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758238Z","level":"info","event":"Current task name:imprimir_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758286Z","level":"info","event":"Dag name:hello_world_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758327Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758374Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.758420Z","level":"info","event":"Task operator:<Task(BashOperator): imprimir_data>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:32.734912","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:32.736618","level":"info","event":"sáb 24 mai 2025 21:23:32 -03","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:32.736735","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:32.737061","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019704d2-bc8e-7240-a5d6-6722b138f4e3'), task_id='imprimir_data', dag_id='hello_world_dag', run_id='scheduled__2025-05-25T00:00:00+00:00', try_number=1, map_index=-1, hostname='laptop', context_carrier=None, task=<Task(BashOperator): imprimir_data>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 5, 25, 0, 23, 29, 483333, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}

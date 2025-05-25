@@ -1,0 +1,15 @@
+{"timestamp":"2025-05-25T00:23:33.132772","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-25T00:23:33.133137","level":"info","event":"Filling up the DagBag from /home/escova/workspace/testdrive/airflow/standalone/dags/hello_world_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-25T00:23:33.140999","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:33.141370","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'echo \"Olá mundo do Airflow!\"']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:33.154758Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154837Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154871Z","level":"info","event":"Current task name:ola_mundo","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154900Z","level":"info","event":"Dag name:hello_world_dag","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154927Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154954Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.154979Z","level":"info","event":"Task operator:<Task(BashOperator): ola_mundo>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-25T00:23:33.148724","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:33.149187","level":"info","event":"Olá mundo do Airflow!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:33.149334","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-25T00:23:33.149712","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019704d2-bc8f-7b66-a3a5-99051ae53bc8'), task_id='ola_mundo', dag_id='hello_world_dag', run_id='scheduled__2025-05-25T00:00:00+00:00', try_number=1, map_index=-1, hostname='laptop', context_carrier=None, task=<Task(BashOperator): ola_mundo>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 5, 25, 0, 23, 33, 103124, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
